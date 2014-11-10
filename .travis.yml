@@ -1,0 +1,12 @@
+language: php
+php:
+  - hhvm
+  - hhvm-nightly
+
+before_install:
+  - composer self-update --quiet --no-interaction
+
+before_script:
+  - composer install --quiet --no-interaction
+
+script: ./.travis/build.sh
