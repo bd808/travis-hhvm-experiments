@@ -2,6 +2,9 @@ language: php
 php:
   - hhvm
   - hhvm-nightly
+env:
+  - HHVM_FLAGS="-vEval.Jit=1"
+  - HHVM_FLAGS="-vEval.Jit=0"
 
 before_install:
   - composer self-update --quiet --no-interaction

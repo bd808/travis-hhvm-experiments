@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -ex
 
-hhvm --php vendor/phpunit/phpunit/phpunit
+hhvm ${HHVM_FLAGS} --php vendor/phpunit/phpunit/phpunit
